@@ -15,7 +15,7 @@ def text_to_speech(text):
 with st.sidebar:
     st.title("✨ Lucid Ayarlar")
     # Groq'un hızlı modelleri: llama3-8b-8192 veya llama3-70b-8192
-    selected_model = st.selectbox("Zeka Modeli", ["llama3-8b-8192", "llama3-70b-8192"], index=0)
+    selected_model = st.selectbox("Zeka Modeli", ["llama-3.1-8b-instant", "llama-3.3-70b-versatile"], index=0)
     
     uploaded_file = st.file_uploader("Lucid'e bir PDF okutun", type="pdf")
     pdf_text = ""
